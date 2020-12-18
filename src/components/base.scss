@@ -1,0 +1,142 @@
+$background-light: #f2f2f7;
+$charcoal: #131415;
+$tint: #635bff;
+
+$spacer-small: 1.6rem;
+$spacer-medium: 3.2rem;
+$spacer-large: 6.4rem;
+
+$breakpoint-medium: 420px;
+$breakpoint-large: 840px;
+
+//---------------------------------------------------------
+// Base
+//---------------------------------------------------------
+
+html {
+  font-size: 10px;
+}
+
+body {
+  background-color: $background-light;
+  color: rgba($charcoal, 0.64);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+    Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 1.8rem;
+  line-height: 1.5;
+  padding-left: $spacer-medium;
+  padding-right: $spacer-medium;
+}
+
+main {
+  margin-bottom: $spacer-large;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 84.8rem;
+}
+
+figure {
+  margin: 0;
+}
+
+h1 {
+  color: $charcoal;
+  font-size: 3.2rem;
+  line-height: 1.25;
+  margin-bottom: $spacer-small;
+  margin-top: 0;
+}
+
+h2,
+h3,
+h4 {
+  color: $charcoal;
+}
+
+p,
+ul,
+ol {
+  margin-bottom: $spacer-small;
+}
+
+a {
+  color: rgba($charcoal, 0.64);
+  text-decoration: none;
+
+  &:hover,
+  &:focus {
+    color: $tint;
+    outline: none;
+    text-decoration: underline;
+  }
+}
+
+//---------------------------------------------------------
+// Components
+//---------------------------------------------------------
+
+.home {
+  @media (min-width: $breakpoint-large) {
+    align-items: center;
+    display: flex;
+  }
+}
+
+.home__figure {
+  @media (min-width: $breakpoint-large) {
+    order: -1;
+    margin-right: 6.4rem;
+    max-width: 38.2rem;
+    max-height: 72.2rem;
+  }
+}
+
+.home__device {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 48rem;
+  width: 100%;
+
+  @media (min-width: $breakpoint-large) {
+    max-width: 52.4rem;
+    width: 52.4rem;
+  }
+}
+
+.home__content {
+  flex-grow: 1;
+  margin-bottom: $spacer-medium;
+  text-align: center;
+
+  @media (min-width: $breakpoint-large) {
+    margin-bottom: 0;
+    text-align: left;
+  }
+}
+
+.navigation {
+  align-items: center;
+  border-bottom: 0.1rem solid rgba($charcoal, 0.08);
+  display: flex;
+  font-size: 1.4rem;
+  margin-bottom: $spacer-medium;
+}
+
+.navigation__actions {
+  flex-grow: 1;
+  text-align: right;
+}
+
+.navigation__link {
+  margin-left: $spacer-small;
+}
+
+.main-footer {
+  font-size: 1.4rem;
+  text-align: center;
+
+  @media (min-width: $breakpoint-large) {
+    text-align: left;
+  }
+}
