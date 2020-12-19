@@ -1,6 +1,8 @@
 $background-light: #f2f2f7;
-$charcoal: #131415;
 $tint: #635bff;
+$gray1: #1c1c15;
+$gray2: #636366;
+$border-color: #d1d1d6;
 
 $spacer-small: 1.6rem;
 $spacer-medium: 3.2rem;
@@ -19,7 +21,7 @@ html {
 
 body {
   background-color: $background-light;
-  color: rgba($charcoal, 0.64);
+  color: $gray2;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
     Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   font-size: 1.8rem;
@@ -45,7 +47,7 @@ figure {
 }
 
 h1 {
-  color: $charcoal;
+  color: $gray1;
   font-size: 3.2rem;
   line-height: 1.25;
   margin-bottom: $spacer-small;
@@ -55,7 +57,7 @@ h1 {
 h2,
 h3,
 h4 {
-  color: $charcoal;
+  color: $gray1;
 }
 
 p,
@@ -65,7 +67,7 @@ ol {
 }
 
 a {
-  color: rgba($charcoal, 0.64);
+  color: $gray2;
   text-decoration: none;
 
   &:hover,
@@ -80,10 +82,28 @@ a {
 // Components
 //---------------------------------------------------------
 
+.navigation {
+  align-items: center;
+  border-bottom: 0.1rem solid $border-color;
+  display: flex;
+  font-size: 1.4rem;
+  margin-bottom: $spacer-medium;
+}
+
+.navigation__actions {
+  flex-grow: 1;
+  text-align: right;
+}
+
+.navigation__link {
+  margin-left: $spacer-small;
+}
+
 .home {
   @media (min-width: $breakpoint-large) {
     align-items: center;
     display: flex;
+    margin-top: $spacer-large;
   }
 }
 
@@ -120,28 +140,11 @@ a {
   }
 }
 
-.navigation {
-  align-items: center;
-  border-bottom: 0.1rem solid rgba($charcoal, 0.08);
-  display: flex;
-  font-size: 1.4rem;
-  margin-bottom: $spacer-medium;
-}
-
-.navigation__actions {
-  flex-grow: 1;
-  text-align: right;
-}
-
-.navigation__link {
-  margin-left: $spacer-small;
+.call-to-action {
+  margin-top: $spacer-medium;
 }
 
 .main-footer {
   font-size: 1.4rem;
   text-align: center;
-
-  @media (min-width: $breakpoint-large) {
-    text-align: left;
-  }
 }

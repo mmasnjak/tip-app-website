@@ -6,6 +6,7 @@ const Page = () => {
   return (
     <Fragment>
       <SEO />
+
       <section className='home'>
         <article className='home__content'>
           <h1>Tip is a simple gratuity&nbsp;calculator.</h1>
@@ -14,7 +15,9 @@ const Page = () => {
             the people you are&nbsp;with.
           </p>
 
-          <AppStoreButton href='https://apps.apple.com/us/app/tip-gratuity-calculator/id1476974703' />
+          <div className='call-to-action'>
+            <AppStoreButton href='https://apps.apple.com/us/app/tip-gratuity-calculator/id1476974703' />
+          </div>
         </article>
 
         <aside className='home__figure'>
