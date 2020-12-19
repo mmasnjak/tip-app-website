@@ -18,7 +18,7 @@ const Navigation = () => {
         <div className='navigation__actions'>
           <OutboundLink
             className='navigation__link'
-            href='mailto:&#104;&#101;&#108;&#112;&#064;&#116;&#105;&#112;&#045;&#097;&#112;&#112;&#046;&#099;&#111;&#109;?subject=Help'
+            href='https://forms.gle/391Vk6xm3tTBS7ty8'
             target='_blank'
           >
             Support
