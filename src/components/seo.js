@@ -15,7 +15,7 @@ function SEO({ title, description, image, appId }) {
   } = site.siteMetadata
 
   const seo = {
-    title: title || defaultTitle,
+    title: title ? `${title} — ${defaultTitle}` : defaultTitle,
     description: description || defaultDescription,
     image: `${siteUrl}${image || defaultImage}`,
     url: `${siteUrl}${pathname}`,
@@ -26,8 +26,7 @@ function SEO({ title, description, image, appId }) {
       htmlAttributes={{
         lang: "en",
       }}
-      title={seo.title}
-      titleTemplate={`%s — ${defaultTitle}`}>
+      title={seo.title}>
       <meta name="description" content={seo.description} />
 
       <meta property="og:title" content={defaultTitle} />
@@ -50,8 +49,8 @@ function SEO({ title, description, image, appId }) {
 }
 
 SEO.propTypes = {
-  description: PropTypes.string.isRequired,
-  title: PropTypes.string.isRequired,
+  description: PropTypes.string,
+  title: PropTypes.string,
   image: PropTypes.string,
   appId: PropTypes.string,
 }

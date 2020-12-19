@@ -1,10 +1,9 @@
 import React from "react"
 import { Link } from "gatsby"
 
-// markup
 const IndexPage = () => {
   return (
-    <article className='error-page'>
+    <article className="error-page">
       <h1>
         404
         <br />
@@ -13,7 +12,7 @@ const IndexPage = () => {
       <p>Sorry we couldn’t find what you were looking for.</p>
 
       <p>
-        <Link to='/'>Go home</Link> →
+        <Link to="/">Go home</Link> →
       </p>
     </article>
   )

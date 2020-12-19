@@ -4,7 +4,8 @@ import SEO from "../components/seo"
 
 const Page = () => (
   <Fragment>
-    <SEO />
+    <SEO title="Privacy Policy" />
+
     <section>
       <article>
         <h1>Privacy Policy</h1>
@@ -452,8 +453,8 @@ const Page = () => (
           <br />
           By email:{" "}
           <OutboundLink
-            href='mailto:&#104;&#101;&#108;&#112;&#064;&#116;&#105;&#112;&#045;&#097;&#112;&#112;&#046;&#099;&#111;&#109;?subject=Help'
-            target='_blank'
+            href="mailto:&#104;&#101;&#108;&#112;&#064;&#116;&#105;&#112;&#045;&#097;&#112;&#112;&#046;&#099;&#111;&#109;?subject=Help"
+            target="_blank"
             style={{ marginRight: "1.6rem" }}>
             &#104;&#101;&#108;&#112;&#064;&#116;&#105;&#112;&#045;&#097;&#112;&#112;&#046;&#099;&#111;&#109;
           </OutboundLink>
