@@ -1,6 +1,6 @@
-import React, { Fragment } from "react";
-import { OutboundLink } from "gatsby-plugin-google-analytics";
-import SEO from "../components/seo";
+import React, { Fragment } from "react"
+import { OutboundLink } from "gatsby-plugin-google-analytics"
+import SEO from "../components/seo"
 
 const Page = () => (
   <Fragment>
@@ -454,14 +454,13 @@ const Page = () => (
           <OutboundLink
             href='mailto:&#104;&#101;&#108;&#112;&#064;&#116;&#105;&#112;&#045;&#097;&#112;&#112;&#046;&#099;&#111;&#109;?subject=Help'
             target='_blank'
-            style={{ marginRight: "1.6rem" }}
-          >
+            style={{ marginRight: "1.6rem" }}>
             &#104;&#101;&#108;&#112;&#064;&#116;&#105;&#112;&#045;&#097;&#112;&#112;&#046;&#099;&#111;&#109;
           </OutboundLink>
         </p>
       </article>
     </section>
   </Fragment>
-);
+)
 
-export default Page;
+export default Page

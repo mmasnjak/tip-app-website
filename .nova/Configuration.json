@@ -1,0 +1,13 @@
+{
+  "prettier.default-config.bracketSpacing" : "Enable",
+  "prettier.default-config.endOfLine" : "lf",
+  "prettier.default-config.jsxBracketSameLine" : "Enable",
+  "prettier.default-config.semi" : "Disable",
+  "prettier.default-config.singleQuote" : "Disable",
+  "prettier.default-config.tabWidth" : 2,
+  "prettier.default-config.trailingComma" : "es5",
+  "prettier.default-config.useTabs" : "Disable",
+  "prettier.format-on-save" : "Enable",
+  "workspace.color" : 7,
+  "workspace.name" : "Tip App Marketing Site"
+}

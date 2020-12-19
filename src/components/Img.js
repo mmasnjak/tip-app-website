@@ -1,5 +1,5 @@
-import React from "react";
-import PropTypes from "prop-types";
+import React from "react"
+import PropTypes from "prop-types"
 
 const Img = ({ src, srcMedium, srcLarge, alt, style }) => (
   <picture>
@@ -7,13 +7,13 @@ const Img = ({ src, srcMedium, srcLarge, alt, style }) => (
     {srcMedium && <source media={`(min-width: 840px)`} srcSet={srcMedium} />}
 
     <img
-      loading='lazy'
+      loading="lazy"
       style={{ width: "100%", ...style }}
       src={src}
       alt={alt}
     />
   </picture>
-);
+)
 
 Img.propTypes = {
   alt: PropTypes.string.isRequired,
@@ -21,6 +21,6 @@ Img.propTypes = {
   srcMedium: PropTypes.string,
   srcLarge: PropTypes.string,
   style: PropTypes.object,
-};
+}
 
-export default Img;
+export default Img

@@ -1,6 +1,6 @@
-import React, { Fragment } from "react";
-import AppStoreButton from "../components/AppStoreButton";
-import SEO from "../components/seo";
+import React, { Fragment } from "react"
+import AppStoreButton from "../components/AppStoreButton"
+import SEO from "../components/seo"
 
 const Page = () => {
   return (
@@ -24,7 +24,6 @@ const Page = () => {
           <figure>
             <picture>
               <source media='(min-width: 840px)' srcSet='/device-large.png' />
-
               <source media='(min-width: 420px)' srcSet='/device-medium.png' />
 
               <img
@@ -38,7 +37,7 @@ const Page = () => {
         </aside>
       </section>
     </Fragment>
-  );
-};
+  )
+}
 
-export default Page;
+export default Page

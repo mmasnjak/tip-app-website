@@ -1,10 +1,10 @@
-import React, { useState } from "react";
-import PropTypes from "prop-types";
-import { OutboundLink } from "gatsby-plugin-google-analytics";
+import React, { useState } from "react"
+import PropTypes from "prop-types"
+import { OutboundLink } from "gatsby-plugin-google-analytics"
 
 const AppStoreButton = ({ href, invert }) => {
-  const [hasFocus, setHasFocus] = useState(false);
-  const color = invert ? "white" : "black";
+  const [hasFocus, setHasFocus] = useState(false)
+  const color = invert ? "white" : "black"
 
   const styles = {
     root: {
@@ -19,35 +19,34 @@ const AppStoreButton = ({ href, invert }) => {
       width: "100%",
       height: "auto",
     },
-  };
+  }
 
   const handleFocus = () => {
-    setHasFocus(!hasFocus);
-  };
+    setHasFocus(!hasFocus)
+  }
 
   return (
     <OutboundLink
-      rel='noopener noreferrer'
+      rel="noopener noreferrer"
       style={styles.root}
       href={href}
-      target='_blank'
+      target="_blank"
       onFocus={handleFocus}
-      onBlur={handleFocus}
-    >
+      onBlur={handleFocus}>
       <img
         style={styles.image}
-        width='120'
-        height='40'
+        width="120"
+        height="40"
         src={`/app-store-download-${color}.svg`}
-        alt='Download from the App Store'
+        alt="Download from the App Store"
       />
     </OutboundLink>
-  );
-};
+  )
+}
 
 AppStoreButton.propTypes = {
   invert: PropTypes.bool,
   href: PropTypes.string.isRequired,
-};
+}
 
-export default AppStoreButton;
+export default AppStoreButton
