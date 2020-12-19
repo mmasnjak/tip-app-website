@@ -6,7 +6,7 @@ import Img from "./Img"
 const Navigation = () => {
   return (
     <header>
-      <nav class="navigation">
+      <nav className="navigation">
         <Link to="/">
           <Img
             src="/logo.svg"
