@@ -24,8 +24,13 @@ body {
     Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   font-size: 1.8rem;
   line-height: 1.5;
-  padding-left: $spacer-medium;
-  padding-right: $spacer-medium;
+  padding-left: $spacer-small;
+  padding-right: $spacer-small;
+
+  @media (min-width: $breakpoint-large) {
+    padding-left: $spacer-medium;
+    padding-right: $spacer-medium;
+  }
 }
 
 main {

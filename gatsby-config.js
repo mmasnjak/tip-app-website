@@ -14,13 +14,19 @@ module.exports = {
     {
       resolve: "gatsby-plugin-google-analytics",
       options: {
-        trackingId: "1",
+        trackingId: "G-C63JKS16Y8",
       },
     },
     {
-      resolve: "gatsby-plugin-manifest",
+      resolve: `gatsby-plugin-manifest`,
       options: {
-        icon: "src/images/icon.png",
+        name: `Tip - Gratuity Calculator`,
+        short_name: `Tip App`,
+        start_url: `/`,
+        background_color: `#f2f2f7`,
+        theme_color: `#f2f2f7`,
+        display: `minimal-ui`,
+        icon: `static/icon.png`,
       },
     },
   ],
