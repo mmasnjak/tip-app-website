@@ -14,7 +14,14 @@ module.exports = {
     {
       resolve: "gatsby-plugin-google-analytics",
       options: {
-        trackingId: "G-C63JKS16Y8",
+        trackingId: "G-NR6RNRB0BF",
+      },
+    },
+    {
+      resolve: "gatsby-plugin-google-tagmanager",
+      options: {
+        id: "G-NR6RNRB0BF",
+        includeInDevelopment: true,
       },
     },
     {
