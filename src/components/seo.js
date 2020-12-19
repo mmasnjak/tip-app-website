@@ -12,7 +12,6 @@ function SEO({ title, description, image, appId }) {
     defaultDescription,
     siteUrl,
     defaultImage,
-    //twitterUsername,
   } = site.siteMetadata;
 
   const seo = {
@@ -41,7 +40,7 @@ function SEO({ title, description, image, appId }) {
 
       <meta name='twitter:title' content={defaultTitle} />
       <meta name='twitter:description' content={defaultDescription} />
-      <meta name='twitter:creator' content={twitterUsername} />
+      <meta name='twitter:creator' content='@m_masnjak' />
       <meta name='twitter:image' content={seo.image} />
       <meta name='twitter:site' content={seo.url} />
       <meta name='twitter:card' content='summary_large_image' />
