@@ -18,10 +18,13 @@ module.exports = {
       },
     },
     {
-      resolve: "gatsby-plugin-google-tagmanager",
+      resolve: `gatsby-plugin-google-gtag`,
       options: {
-        id: "G-NR6RNRB0BF",
-        includeInDevelopment: true,
+        trackingIds: ["G-NR6RNRB0BF"],
+        pluginConfig: {
+          head: false,
+          respectDNT: true,
+        },
       },
     },
     {
