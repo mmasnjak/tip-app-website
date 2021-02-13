@@ -1,5 +1,5 @@
 import React, { Fragment } from "react"
-import { OutboundLink } from "gatsby-plugin-google-analytics"
+import { OutboundLink } from "gatsby-plugin-google-gtag"
 import SEO from "../components/seo"
 
 const Page = () => (

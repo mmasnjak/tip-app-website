@@ -12,12 +12,6 @@ module.exports = {
     "gatsby-plugin-react-helmet",
     "gatsby-plugin-sitemap",
     {
-      resolve: "gatsby-plugin-google-analytics",
-      options: {
-        trackingId: "G-NR6RNRB0BF",
-      },
-    },
-    {
       resolve: `gatsby-plugin-google-gtag`,
       options: {
         trackingIds: ["G-NR6RNRB0BF"],

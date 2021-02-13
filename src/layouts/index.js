@@ -1,6 +1,6 @@
 import React, { Fragment } from "react"
 import PropTypes from "prop-types"
-import { OutboundLink } from "gatsby-plugin-google-analytics"
+import { OutboundLink } from "gatsby-plugin-google-gtag"
 import "../components/base.scss"
 import Navigation from "../components/Navigation"
 
@@ -10,9 +10,9 @@ const Layout = ({ children, location }) => (
 
     <main>{children}</main>
 
-    <footer className='main-footer'>
+    <footer className="main-footer">
       &copy; 2020&nbsp;
-      <OutboundLink href='https://masnjak.com' target='_blank'>
+      <OutboundLink href="https://masnjak.com" target="_blank">
         Marko&nbsp;Masnjak
       </OutboundLink>
     </footer>
