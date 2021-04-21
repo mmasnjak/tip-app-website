@@ -4,20 +4,24 @@ import { OutboundLink } from "gatsby-plugin-google-gtag"
 import "../components/base.scss"
 import Navigation from "../components/Navigation"
 
-const Layout = ({ children, location }) => (
-  <Fragment>
-    <Navigation />
+const Layout = ({ children, location }) => {
+  const year = new Date().getFullYear()
 
-    <main>{children}</main>
+  return (
+    <Fragment>
+      <Navigation />
 
-    <footer className="main-footer">
-      &copy; 2020&nbsp;
-      <OutboundLink href="https://masnjak.com" target="_blank">
-        Marko&nbsp;Masnjak
-      </OutboundLink>
-    </footer>
-  </Fragment>
-)
+      <main>{children}</main>
+
+      <footer className="main-footer">
+        &copy; 2020 – {year}{" "}
+        <OutboundLink href="https://markomasnjak.com" target="_blank">
+          Marko&nbsp;Masnjak
+        </OutboundLink>
+      </footer>
+    </Fragment>
+  )
+}
 
 Layout.propTypes = {
   children: PropTypes.node.isRequired,
